@@ -1,0 +1,14 @@
+{
+	"todo": [
+		{
+			"task": "My First Default Task",
+			"complete": "false",
+			"description": "Finish lab4 for CPS630"
+		},
+		{
+			"task": "My Completed Default Task",
+			"complete": "true",
+			"description": "This is a lie I never finish anything"
+		}
+	]
+}

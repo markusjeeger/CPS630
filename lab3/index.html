@@ -1,0 +1,59 @@
+<!DOCTYPE html>           
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<title>Markus Jeeger Lab 3</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="logo">
+				Jeeger Location Systems
+			</div>
+		</header>
+		
+		<main class="content">
+			<div class="large">
+				<section id="main" class="lg">
+					<div class="mapbox">
+						<div id="floating-panel">
+							Click the map or submit:
+							<input id="latlng" type="text" value="43.6532,-79.3832">
+							<input id="submit" type="button" value="Set Start Location">
+						</div>
+						<div id="map"></div>
+					</div>
+				</section>
+			</div>
+			
+			<div class="large-io">
+				<section id="main" class="io">
+					<section id="dropper" class="dropper">
+						<div id="drop_zone" class="drop_zone">
+							<p>Drag a coordinates file (.txt) to the drop area for destination.</p>
+						</div>
+					</section>
+					<section id="output" class="output">
+						<span id="start"></span><span id="start-coords"></span><br>
+						<span id="end"></span><span id="end-coords"></span><br>
+						<span id="dist"></span><span id="distance"></span><br>
+					</section>
+				</section>
+			</div>
+			
+			<footer class="footer">
+				<details>
+					<summary>CPS630 Lab 3</summary>
+					<span class="details">
+						by Markus Jeeger. All Rights Reserved.
+					</span>
+				</details>
+			</footer>
+		</main>
+	</div>
+	<script src="lab.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo3W3vHUGzHDflsHxpE3jGviwXSFKsn1g&callback=initMap"></script>
+</body>
+</html> 

@@ -1,0 +1,191 @@
+<!DOCTYPE html>           
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Markus Jeeger Lab 1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="logo">
+				Jeeger Weather Systems
+			</div>
+			<div class="searchbar">
+				<input id="city" type="text" placeholder="City"></input>
+				<input id="country" type="text" placeholder="Country Code (xx)"></input>
+				<button type="submit" name="search" onclick="setCity()">Search</button>
+				<label class="switch">
+					<input id="temp" type="checkbox" onclick="switchUnits()">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</header>
+		
+		<main class="content">
+			<div class="large">
+				<section id="output" class="lg">
+					<div class="mainWeather" id="current">
+						<div class="row">
+							<h2 id="title"> Current Weather </h2>
+						</div>
+						<div class="row">
+							<div class="icon" id="currentIcon">
+								
+							</div>
+							<div class="info" id="currentInfo">
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="extras" id="currentPrecip">
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="extras" id="currentHumidity">
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="extras" id="currentWind">
+								
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<div class="large">
+				<section id="hourly" class="lg">
+					<div class="mainWeather" id="hourly">
+						<div class="row">
+							<h2> Hourly Weather </h2>
+						</div>
+						<div class="row">
+							<div class="hourlyColumn">
+								<div class="hourlyWeatherHour" id="h0">
+								</div>
+								<div class="hourlyWeatherIcon" id="hour0icon">
+								</div>
+								<div class="hourlyWeather" id="hour0">
+								</div>
+							</div>
+							<div class="hourlyColumn">
+								<div class="hourlyWeatherHour" id="h3">
+								</div>
+								<div class="hourlyWeatherIcon" id="hour3icon">
+								</div>
+								<div class="hourlyWeather" id="hour3">
+								</div>
+							</div>
+							<div class="hourlyColumn">
+								<div class="hourlyWeatherHour" id="h6">
+								</div>
+								<div class="hourlyWeatherIcon" id="hour6icon">
+								</div>
+								<div class="hourlyWeather" id="hour6">
+								</div>
+							</div>
+							<div class="hourlyColumn">
+								<div class="hourlyWeatherHour" id="h9">
+								</div>
+								<div class="hourlyWeatherIcon" id="hour9icon">
+								</div>
+								<div class="hourlyWeather" id="hour9">
+								</div>
+							</div>
+							<div class="hourlyColumn">
+								<div class="hourlyWeatherHour" id="h12">
+								</div>
+								<div class="hourlyWeatherIcon" id="hour12icon">
+								</div>
+								<div class="hourlyWeather" id="hour12">
+								</div>
+							</div>
+							<div class="hourlyColumn">
+								<div class="hourlyWeatherHour" id="h15">
+								</div>
+								<div class="hourlyWeatherIcon" id="hour15icon">
+								</div>
+								<div class="hourlyWeather" id="hour15">
+								</div>
+							</div>
+							<div class="hourlyColumn">
+								<div class="hourlyWeatherHour" id="h18">
+								</div>
+								<div class="hourlyWeatherIcon" id="hour18icon">
+								</div>
+								<div class="hourlyWeather" id="hour18">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<div class="large">
+				<section id="daily" class="lg">
+					<div class="mainWeather" id="daily">
+						<div class="row">
+							<h2> 5-Day Forecast </h2>
+						</div>
+						<div class="row">
+							<div class="dailyColumn">
+								<div class="dailyWeatherDay" id="d1">
+								</div>
+								<div class="dailyWeatherIcon" id="day1icon">
+								</div>
+								<div class="dailyWeather" id="day1">
+								</div>
+							</div>
+							<div class="dailyColumn">
+								<div class="dailyWeatherDay" id="d2">
+								</div>
+								<div class="dailyWeatherIcon" id="day2icon">
+								</div>
+								<div class="dailyWeather" id="day2">
+								</div>
+							</div>
+							<div class="dailyColumn">
+								<div class="dailyWeatherDay" id="d3">
+								</div>
+								<div class="dailyWeatherIcon" id="day3icon">
+								</div>
+								<div class="dailyWeather" id="day3">
+								</div>
+							</div>
+							<div class="dailyColumn">
+								<div class="dailyWeatherDay" id="d4">
+								</div>
+								<div class="dailyWeatherIcon" id="day4icon">
+								</div>
+								<div class="dailyWeather" id="day4">
+								</div>
+							</div>
+							<div class="dailyColumn">
+								<div class="dailyWeatherDay" id="d5">
+								</div>
+								<div class="dailyWeatherIcon" id="day5icon">
+								</div>
+								<div class="dailyWeather" id="day5">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<footer class="footer">
+				<details>
+					<summary>CPS630 Lab 2</summary>
+					<span class="details">
+						by Markus Jeeger. All Rights Reserved.
+					</span>
+				</details>
+			</footer>
+		</main>
+	</div>
+	<script src="lab.js"></script>
+</body>
+</html> 
